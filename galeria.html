@@ -12,32 +12,53 @@
 </head>
 <body>
 	<header>
-		<div>
-            <img src="images/logo.png" alt="Logo Legion">
-        </div>
+        <a href="index.html">
+            <div>
+                <img src="images/logo.png" alt="Logo Legion">
+            </div>
+        </a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         <nav id="menu_bar" class="">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="resenas.html">Reseñas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul id="menu">
+                <li class="menu"><a href="index.html">Inicio</a></li>
+                <li class="menu"><a href="trama.html">Trama</a></li>
+                <li class="menu">
+                    Personajes
+                    <ul id="submenu">
+                        <li><a href="davidhaller.html">-David</a></li>
+                        <li><a href="sydneybarrett.html">-Sydney</a></li>
+                        <li><a href="lennybusker.html">-Lenny</a></li>
+                        <li><a href="amahlfarouk.html">-Farouk</a></li>
+                        <li><a href="oliverbird.html">-Oliver</a></li>
+                        <li><a href="melaniebird.html">-Melanie</a></li>
+                        <li><a href="ptonomywallace.html">-Ptonomy</a></li>
+                        <li><a href="caryloudermilk.html">-Cary</a></li>
+                        <li><a href="kerryloudermilk.html">-Kerry</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="produccion.html">Produccion</a></li>
+                <li class="menu"><a href="galeria.html">Galería</a></li>
+                <li class="menu"><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <section>
-        
+        <article class="principal">
+            <div>
+                <p>Galeria</p>
+            </div>
+        </article>
 
             
         <article class="secundario">
-            <a class="example-image-link" href="images/I1.jpg" data-lightbox="Legion" data-title="Portada del comic en el que fue basada la serie."><img class="example-image" src="images/I1_min.jpg" alt="Portada del comic en el que fue basada la serie."/></a>
-            <a class="example-image-link" href="images/I2.jpg" data-lightbox="Legion" data-title="David Haller mirando a camara."><img class="example-image" src="images/I2_min.jpg" alt="David Haller mirando a camara."/></a>
-            <a class="example-image-link" href="images/I3.jpg" data-lightbox="Legion" data-title="David usando sus poderes."><img class="example-image" src="images/I3_min.jpg" alt="David usando sus poderes."/></a>
-            <a class="example-image-link" href="images/I4.jpg" data-lightbox="Legion" data-title="David no puede controlar sus poderes."><img class="example-image" src="images/I4_min.jpg" alt="David no puede controlar sus poderes."/></a>
-            <a class="example-image-link" href="images/I5.jpg" data-lightbox="Legion" data-title="David Haller."><img class="example-image" src="images/I5_min.jpg" alt="David Haller."/></a>
-            <a class="example-image-link" href="images/I6.jpg" data-lightbox="Legion" data-title="David Haller."><img class="example-image" src="images/I6_min.jpg" alt="David Haller."/></a>
-        
+            <div> 
+                <a class="example-image-link" href="images/I1.jpg" data-lightbox="Legion" data-title="Portada del comic en el que fue basada la serie."><img class="example-image" src="images/I1_min.jpg" alt="Portada del comic en el que fue basada la serie." /></a>
+                <a class="example-image-link" href="images/I2.jpg" data-lightbox="Legion" data-title="David Haller mirando a camara."><img class="example-image" src="images/I2_min.jpg" alt="David Haller mirando a camara." /></a>
+                <a class="example-image-link" href="images/I3.jpg" data-lightbox="Legion" data-title="David usando sus poderes."><img class="example-image" src="images/I3_min.jpg" alt="David usando sus poderes." /></a>
+                <a class="example-image-link" href="images/I4.jpg" data-lightbox="Legion" data-title="David no puede controlar sus poderes."><img class="example-image" src="images/I4_min.jpg" alt="David no puede controlar sus poderes." /></a>
+                <a class="example-image-link" href="images/I5.jpg" data-lightbox="Legion" data-title="David conoce a Melanie."><img class="example-image" src="images/I5_min.jpg" alt="David Haller." /></a>
+                <a class="example-image-link" href="images/I6.jpg" data-lightbox="Legion" data-title="David Haller."><img class="example-image" src="images/I6_min.jpg" alt="David Haller." /></a>
+            </div>
 
 
 
@@ -76,15 +97,17 @@
         <img src="images/redes/youtube.png" alt="Youtube">
         <img src="images/redes/instagram.png" alt="Instagram">
     </footer>
-  <script type="text/javascript">
+    <script type="text/javascript">
         function myFunction() {
-          var x = document.getElementById("menu_bar");
-          if (x.className === "") {
-            x.className += " responsive";
-          } else {
-            x.className = "";
-          }
+            var x = document.getElementById("menu_bar");
+            if (x.className === "") {
+                x.className += " responsive";
+            } else {
+                x.className = "";
+            }
         }
+        
+    
     </script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>

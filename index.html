@@ -10,47 +10,112 @@
 	<title>Proyecto: Legion</title>
 </head>
 <body>
-	<header>
-		<div>
-            <img src="images/logo.png" alt="Logo Legion">
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-        <nav id="menu_bar" class="">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="resenas.html">Reseñas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <article class="principal">
-
+    <header>
+        <a href="index.html">
             <div>
-
-                
-                <h2>Legion</h2>
-                <p> Legion es una serie de televisión estadounidense, creada por Noah Hawley para el canal FX, y basada en el personaje de Marvel Comics David Haller / Legión. Está conectada con el universo cinematográfico X-Men, siendo la primera serie en cumplir dicha característica, y es producida por FX Productions en asociación con Marvel Television. Hawley ejerce de showrunner de la serie.
-                Dan Stevens interpreta a Haller, un mutante diagnosticado con esquizofrenia a una edad temprana. El reparto lo completan Rachel Keller, Aubrey Plaza, Bill Irwin, Jeremie Harris, Amber Midthunder, Katie Aselton y Jean Smart.
-                </p>
-                <h3>Resumen</h3>
-                <p>David Haller es un joven diagnosticado de esquizofrenia que ha pasado su vida recluido en un psiquiátrico. Pero, de repente, comienza a plantearse una cuestión clave: ¿y si sus visiones no son un síntoma de locura sino la verdadera realidad? Las dudas y su nueva situación, harán que David comience a descubrir que es uno de los mutantes más poderosos del planeta.
-                </p>
-
-           
+                <img src="images/logo.png" alt="Logo Legion">
             </div>
-            <img src="images/poster_legion.png" alt="Poster Legion">
+        </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <nav id="menu_bar" class="">
+                <ul id="menu">
+                    <li class="menu"><a href="index.html">Inicio</a></li>
+                    <li class="menu"><a href="trama.html">Trama</a></li>
+                    <li class="menu">
+                        Personajes
+                        <ul id="submenu">
+                            <li><a href="davidhaller.html">-David</a></li>
+                            <li><a href="sydneybarrett.html">-Sydney</a></li>
+                            <li><a href="lennybusker.html">-Lenny</a></li>
+                            <li><a href="amahlfarouk.html">-Farouk</a></li>
+                            <li><a href="oliverbird.html">-Oliver</a></li>
+                            <li><a href="melaniebird.html">-Melanie</a></li>
+                            <li><a href="ptonomywallace.html">-Ptonomy</a></li>
+                            <li><a href="caryloudermilk.html">-Cary</a></li>
+                            <li><a href="kerryloudermilk.html">-Kerry</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="produccion.html">Produccion</a></li>
+                    <li class="menu"><a href="galeria.html">Galería</a></li>
+                    <li class="menu"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
 
+    </header>
+    <section id="inicio">
+        <article class="principal">
+            <div>
+                <img src="images/legion_titulo_inicio.png" alt="Titulo Legion">
+            </div>
         </article>
+        <h1>INICIO</h1>
+        <article class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Legion</h2>
+                <p>Conoce la historia de uno de los mutantes mas poderosos del universo X-MEN</p>
+                <a href="trama.html"><div class="boton">IR</div></a>
+            </div>
+        </article>
+        <article id="impar" class="container2">
+            <div class="texto">
+                <h3>Personajes</h3>
+                <p>descubrilos y a quienes los interpretan</p>
+            </div>
+            <article class="personajes">
+                <div>
+                    <a href="davidhaller.html">
+                        <img src="images/davidmin.jpg" alt="david">
+                        <h4>David Haller</h4>
+                    </a>
 
 
+                    <a href="lennybusker.html">
+                        <img src="images/lennymin.jpg" alt="lenny">
+                        <h4>Lenny Busker</h4>
+                    </a>
 
 
+                    <a href="sydneybarrett.html">
+                        <img src="images/sydneymin.jpg" alt="sydney">
+                        <h4>Sydney Barrett</h4>
+                    </a>
+
+                    <a href="amahlfarouk.html">
+                        <img src="images/faroukmin.jpg" alt="farouk">
+                        <h4>Amahl Farouk</h4>
+                    </a>
 
 
+                    <a href="oliverbird.html">
+                        <img src="images/olivermin.jpg" alt="oliver">
+                        <h4>Oliver Bird</h4>
+                    </a>
 
+                    <a href="ptonomywallace.html">
+                        <img src="images/ptonomymin.jpg" alt="ptonomy">
+                        <h4>Ptonomy Wallace</h4>
+                    </a>
+
+                    <a href="caryloudermilk.html">
+                        <img src="images/carymin.jpg" alt="cary">
+                        <h4>Cary Loudermilk</h4>
+                    </a>
+
+                    <a href="kerryloudermilk.html">
+                        <img src="images/kerrymin.jpg" alt="kerry">
+                        <h4>Kerry Loudermilk</h4>
+                    </a>
+                </div>
+            </article>
+        </article>
+        <article id="produccion" class="container2">
+            <div class="texto">
+                <h3>Produccion</h3>
+                <p>Conoce a los responsables de traer esta historia a la gran pantalla</p>
+                <a class="boton" href="produccion.html">ir</a>
+            </div>
+        </article>
     </section>
 
     <footer>
@@ -61,12 +126,12 @@
     </footer>
     <script type="text/javascript">
         function myFunction() {
-          var x = document.getElementById("menu_bar");
-          if (x.className === "") {
-            x.className += " responsive";
-          } else {
-            x.className = "";
-          }
+            var x = document.getElementById("menu_bar");
+            if (x.className === "") {
+                x.className += " responsive";
+            } else {
+                x.className = "";
+            }
         }
     </script>
 </body>
