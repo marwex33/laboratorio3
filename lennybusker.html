@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+	<title>Proyecto: Legion</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div>
+                <img src="images/logo.png" alt="Logo Legion">
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul id="menu">
+                <li class="menu"><a href="index.html">Inicio</a></li>
+                <li class="menu"><a href="trama.html">Trama</a></li>
+                <li id="activo" class="menu">
+                    Personajes
+                    <ul id="submenu">
+                        <li><a href="davidhaller.html">-David</a></li>
+                        <li><a href="sydneybarrett.html">-Sydney</a></li>
+                        <li><a class="activo" href="lennybusker.html">-Lenny</a></li>
+                        <li><a href="amahlfarouk.html">-Farouk</a></li>
+                        <li><a href="oliverbird.html">-Oliver</a></li>
+                        <li><a href="melaniebird.html">-Melanie</a></li>
+                        <li><a href="ptonomywallace.html">-Ptonomy</a></li>
+                        <li><a href="caryloudermilk.html">-Cary</a></li>
+                        <li><a href="kerryloudermilk.html">-Kerry</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="productores.html">Productores</a></li>
+                <li class="menu"><a href="galeria.html">Galería</a></li>
+                <li class="menu"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section >
+        <article class="principal" id="lenny">
+        </article>
+        <article class="container2">
+            <div class="texto">
+                <h1>Lenny Busker</h1>
+                <p>
+                    Amiga de Haller quien tiene una historia de abuso de alcohol y drogas, además de un comportamiento áspero.​ Muere en el hospital psiquiátrico cuando David y Syd intercambian cuerpos. A partir de ese momento, su forma es utilizada por Shadow King.
+                </p>
+            </div>
+        </article>
+        <article  id="impar" class="container" >
+            <div class="texto">
+                <h2>Dan Stevens</h2>
+                <p>
+                    Aubrey Plaza interpreta al amigo de David, "Lenny Busker". A pesar de una vida de abuso de drogas y alcohol, Lenny, la amiga de David, sabe que cualquier día su vida va a cambiar, lo que le da la energía agradable del optimista imposible. En su nueva posición como mano derecha de David, Lenny se ve atrapada entre su búsqueda de la felicidad personal y la ejecución de los planes de David.
+                </p>
+                <br /><br />
+
+                <h3>Trabajos destacados</h3>
+                <p>
+                    Plaza produjo y protagonizó Ingrid Goes West, que se estrenó en el Festival de Cine de Sundance de 2017 y ganó el premio Waldo Salt Screenwriting Award. La película se proyectó en el Festival de Cine de Londres de 2017. Ingrid Goes West también ganó el premio Independent Spirit a la mejor ópera prima y fue nominada a mejor primer guión.
+                    <br /><br />
+                    En febrero de 2019, Plaza fue sede de la 34ª edición de los premios Film Independent Spirit.
+                    <br /><br />
+                    Por su memorable papel de “Lenny” en Legion de Noah Hawley, Plaza fue nominada a un premio MTV Movie & TV Award 2018 como Mejor Villano y a un Premio Imagen como Mejor Actriz. A continuación, protagonizará junto a Brian Tyree Henry la nueva versión de Child's Play de MGM.
+                    <br /><br />
+                    Durante siete temporadas, Plaza interpretó a la asistente de bajo rendimiento "April Ludgate" en la serie de comedia Parks and Recreation, nominada al Emmy®, junto a sus coprotagonistas Amy Poehler, Nick Offerman y Chris Pratt. La actuación de Plaza le valió una nominación al American Comedy Award 2014 como Mejor Actriz de Reparto de Comedia y nominaciones al Premio Imagen como Mejor Actriz de Reparto/Televisión en 2010, 2012, 2013 y 2014.
+                    <br /><br />
+                    Protagonizó la célebre ópera prima de Colin Trevorrow, Safety Not Guaranteed, junto a Mark Duplass y Jake Johnson. La película, producida por Jay y Mark Duplass, se estrenó en el Festival de Cine de Sundance de 2012 y recibió el Premio Film Independent Spirit de 2013 al Mejor Primer Guión y una nominación a Mejor Primera Película. Por su actuación en la película, Plaza ganó el Premio ALMA 2012 a la Actriz de Película Favorita - Comedia/Musical.
+                    <br /><br />
+                    Otros créditos cinematográficos incluyen The Little Hours (productor) y Life After Beth de Jeff Baena, An Evening with Beverly Luff Linn, Mike and Dave Need Wedding Dates, Ned Rifle, The To Do List, Damsels in Distress, Scott Pilgrim vs. Mundo y gente divertida de Judd Apatow.
+                </p>
+
+            </div>
+            <div id="aubrey" class="img-container"></div>
+        </article>
+    </section>
+
+    <footer>
+        <div>
+            <img src="images/redes/facebook.png" alt="Facebook">
+            <img src="images/redes/twitter.png" alt="Twitter">
+            <img src="images/redes/youtube.png" alt="Youtube">
+            <img src="images/redes/instagram.png" alt="Instagram">
+        </div>
+        <div class="derechos">
+            <p>&copy; DERECHOS RESERVADOS 2024. MITRE, MARTIN FEDERICO</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("menu_bar");
+            if (x.className === "") {
+                x.className += " responsive";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+</body>
+</html>

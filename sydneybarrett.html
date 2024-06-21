@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+	<title>Proyecto: Legion</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div>
+                <img src="images/logo.png" alt="Logo Legion">
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul id="menu">
+                <li class="menu"><a href="index.html">Inicio</a></li>
+                <li class="menu"><a href="trama.html">Trama</a></li>
+                <li id="activo" class="menu">
+                    Personajes
+                    <ul id="submenu">
+                        <li><a href="davidhaller.html">-David</a></li>
+                        <li><a class="activo" href="sydneybarrett.html">-Sydney</a></li>
+                        <li><a href="lennybusker.html">-Lenny</a></li>
+                        <li><a href="amahlfarouk.html">-Farouk</a></li>
+                        <li><a href="oliverbird.html">-Oliver</a></li>
+                        <li><a href="melaniebird.html">-Melanie</a></li>
+                        <li><a href="ptonomywallace.html">-Ptonomy</a></li>
+                        <li><a href="caryloudermilk.html">-Cary</a></li>
+                        <li><a href="kerryloudermilk.html">-Kerry</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="productores.html">Productores</a></li>
+                <li class="menu"><a href="galeria.html">Galería</a></li>
+                <li class="menu"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section >
+        <article class="principal" id="syd">
+        </article>
+        <article class="container2">
+            <div class="texto">
+                <h1>Sydney Barrett</h1>
+                <p>
+                    Una mujer joven que se convierte en la novia de Haller. Ella no deja que nadie la toque físicamente ya que al hacerlo, su mente se intercambia con la mente de la persona que toca. El personaje lleva ese nombre debido a que Roger "Syd" Barrett ,de la banda de rock Pink Floyd, fue una influencia musical importante en la serie para Hawley.
+                </p>
+            </div>
+        </article>
+        <article  id="impar" class="container" >
+            <div class="texto">
+                <h2>Rachel Keller</h2>
+                <p>
+                    Rachel Keller interpreta a "Sydney 'Syd' Barrett". Autosuficiente y astuta en la calle, Syd usó su comportamiento mordaz para mantener a la gente a distancia hasta que se enamoró de David, un poderoso mutante. Tuvieron un romance durante siglos, hasta que Syd fue traicionada por el hombre en el que más confiaba. Ahora dedicada a sí misma por encima de todos los demás, Syd reconoce que su ex nunca fue el héroe de esta historia. Es ella.
+                </p>
+                <br /><br />
+
+                <h3>Trabajos destacados</h3>
+                <p>
+                    Rachel Keller, nativa de Minnesota, tuvo un papel destacado en la segunda entrega de la serie de antología Fargo, ganadora del Globo de Oro® de FX, interpretando a "Simone Gerhardt". En su próximo trabajo, se la puede ver en un arco recurrente en la nueva serie de Netflix, The Society, y en la película In the Shadow of the Moon, también para Netflix.
+                    <br /><br />
+                    Keller estudió en la Universidad Carnegie Mellon y en el Conservatorio de Artistas Escénicos de Saint Paul. También experimenta como fotógrafa.
+                </p>
+
+            </div>
+            <div id="rachel" class="img-container"></div>
+        </article>
+    </section>
+
+    <footer>
+        <div>
+            <img src="images/redes/facebook.png" alt="Facebook">
+            <img src="images/redes/twitter.png" alt="Twitter">
+            <img src="images/redes/youtube.png" alt="Youtube">
+            <img src="images/redes/instagram.png" alt="Instagram">
+        </div>
+        <div class="derechos">
+            <p>&copy; DERECHOS RESERVADOS 2024. MITRE, MARTIN FEDERICO</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("menu_bar");
+            if (x.className === "") {
+                x.className += " responsive";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+</body>
+</html>
