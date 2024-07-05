@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+	<title>Proyecto: Legion</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div>
+                <img src="images/logo.png" alt="Logo Legion">
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul id="menu">
+                <li class="menu"><a href="index.html">Inicio</a></li>
+                <li class="menu"><a href="trama.html">Trama</a></li>
+                <li id="activo" class="menu">
+                    Personajes
+                    <ul id="submenu">
+                        <li><a href="davidhaller.html">-David</a></li>
+                        <li><a href="sydneybarrett.html">-Sydney</a></li>
+                        <li><a href="lennybusker.html">-Lenny</a></li>
+                        <li><a href="amahlfarouk.html">-Farouk</a></li>
+                        <li><a href="oliverbird.html">-Oliver</a></li>
+                        <li><a href="melaniebird.html">-Melanie</a></li>
+                        <li><a href="ptonomywallace.html">-Ptonomy</a></li>
+                        <li><a href="caryloudermilk.html">-Cary</a></li>
+                        <li><a class="activo" href="kerryloudermilk.html">-Kerry</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="productores.html">Productores</a></li>
+                <li class="menu"><a href="galeria.html">Galería</a></li>
+                <li class="menu"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section >
+        <article class="principal" id="kerry">
+        </article>
+        <article class="container2">
+            <div class="texto">
+                <h1>Kerry Loudermilk</h1>
+                <p>
+                    Un savant con un "infantil sentido de asombro", una de los especialistas de la terapeuta Bird. Mantiene un aspecto más joven que el de Cary ya que solo envejece cuando sus cuerpos están separados.
+                </p>
+            </div>
+        </article>
+        <article  id="impar" class="container3">
+            <div class="container">
+                <div class="texto">
+                    <h2>Amber Midthunder</h2>
+                    <p>
+                        Amber Midthunder interpreta a "Kerry Loudermilk", una emprendedora y emprendedora que es el tipo de persona que nunca está satisfecha con un pasto verde. No hay nada que le guste más que una buena pelea... excepto tal vez Cary, la única persona con la que es realmente cercana.
+                    </p>
+                    <br /><br />
+                </div>
+                <div id="amber" class="img-container"></div>
+            </div>
+            <div class="container2">
+                <div class="texto2" >
+                    <h3>Trabajos destacados</h3>
+                    <p>
+                        Midthunder es una actriz nacida en Estados Unidos que descubrió un profundo amor por el arte de actuar desde muy temprana edad. Midthunder creció con un padre actor y una madre directora de casting y comenzó su carrera en la pantalla a temprana edad. Su primer papel como oradora fue a la edad de nueve años junto a Alan Arkin en el éxito independiente Sunshine Cleaning.
+                        <br /><br />
+                        Desde entonces, ha aparecido en Banshee y Longmire, así como en el largometraje Hell or High Water, junto a Jeff Bridges.
+                        <br /><br />
+                        En 2016, Midthunder fue elegida para su primer papel protagónico en la película basada en la fe Priceless, y como una serie regular en Legion de FX de Noah Hawley. Midthunder apareció recientemente en la película independiente She’s Missing, con Josh Hartnett, y en Roswell, Nuevo México, de CW.
+                        <br /><br />
+                        Además de actuar, Midthunder siente pasión por los derechos de los animales y el activismo ambiental.
+                    </p>
+                </div>
+            </div>
+</article>
+
+    </section>
+
+    <footer>
+        <div>
+            <img src="images/redes/facebook.png" alt="Facebook">
+            <img src="images/redes/twitter.png" alt="Twitter">
+            <img src="images/redes/youtube.png" alt="Youtube">
+            <img src="images/redes/instagram.png" alt="Instagram">
+        </div>
+        <div class="derechos">
+            <p>&copy; DERECHOS RESERVADOS 2024. MITRE, MARTIN FEDERICO</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("menu_bar");
+            if (x.className === "") {
+                x.className += " responsive";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+</body>
+</html>

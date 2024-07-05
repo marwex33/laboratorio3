@@ -5,6 +5,7 @@
 }
 p {
 	font-size: 1.25em;
+	padding: 10px;
 	
 }
 h1 {
@@ -270,6 +271,24 @@ header .menu:hover {
 #syd {
 	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../images/sydfondo.jpg);
 }
+#farouk {
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../images/faroukfondo.jpg);
+}
+#oliver {
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../images/oliverfondo.jpg);
+}
+#melanie {
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../images/melaniefondo.jpg);
+}
+#ptonomy {
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../images/ptonomyfondo.jpg);
+}
+#kerry {
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../images/kerryfondo.jpg);
+}
+#cary {
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../images/caryfondo.jpg);
+}
 .container {
 	padding: 100px 12px;
 	display: flex;
@@ -339,6 +358,26 @@ header .menu:hover {
 
 #rachel {
 	background-image: url(../images/rachelkeller.jpg);
+}
+
+#navid {
+	background-image: url(../images/navidnegahban.jpg);
+}
+#jemaine {
+	background-image: url(../images/jemaineclement.jpg);
+}
+#jean {
+	background-image: url(../images/jeansmart.jpg);
+}
+#jeremie {
+	background-image: url(../images/jeremieharris.jpg);
+}
+#bill {
+	background-image: url(../images/billirwin.jpg);
+}
+#amber {
+	background-image: url(../images/ambermidthunder.jpg);
+
 }
 
 .container2 {

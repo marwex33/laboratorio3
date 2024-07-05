@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+	<title>Proyecto: Legion</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div>
+                <img src="images/logo.png" alt="Logo Legion">
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul id="menu">
+                <li class="menu"><a href="index.html">Inicio</a></li>
+                <li class="menu"><a href="trama.html">Trama</a></li>
+                <li id="activo" class="menu">
+                    Personajes
+                    <ul id="submenu">
+                        <li><a href="davidhaller.html">-David</a></li>
+                        <li><a href="sydneybarrett.html">-Sydney</a></li>
+                        <li><a href="lennybusker.html">-Lenny</a></li>
+                        <li><a href="amahlfarouk.html">-Farouk</a></li>
+                        <li><a class="activo" href="oliverbird.html">-Oliver</a></li>
+                        <li><a href="melaniebird.html">-Melanie</a></li>
+                        <li><a href="ptonomywallace.html">-Ptonomy</a></li>
+                        <li><a href="caryloudermilk.html">-Cary</a></li>
+                        <li><a href="kerryloudermilk.html">-Kerry</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="productores.html">Productores</a></li>
+                <li class="menu"><a href="galeria.html">Galería</a></li>
+                <li class="menu"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section >
+        <article class="principal" id="oliver">
+        </article>
+        <article class="container2">
+            <div class="texto">
+                <h1>Oliver Bird</h1>
+                <p>
+                    Oliver Anthony Bird es un mutante y marido de Melanie Bird. Tiene la capacidad de controlar el plano astral,en donde se mantuvo durante décadas hasta que regresó después de enfrentarse al Rey Sombra.
+                </p>
+            </div>
+        </article>
+        <article  id="impar" class="container3">
+            <div class="container">
+                <div class="texto">
+                    <h2>Jemaine Clement</h2>
+                    <p>
+                        es un comediante, actor y multinstrumentista neozelandés, conocido como parte del dúo cómico Flight of the Conchords y por ser la voz de Pepillo La Cacatúa en la serie de películas Río.
+                    </p>
+                    <br /><br />
+                </div>
+                <div id="jemaine" class="img-container"></div>
+            </div>
+            <div class="container2">
+                <div class="texto2" >
+                    <h3>Trabajos destacados</h3>
+                    <p>
+                        <b>Música</b>
+                        <br />
+                        Clement y Bret McKenzie formaron Flight of the Conchords mientras eran compañeros de cuarto y estudiaban en la Universidad Victoria. Realizaron giras internacionales y lanzaron cuatro álbumes. Gracias a su éxito, HBO les ofreció su propia serie televisiva, la cual comenzó en Estados Unidos en 2007 y tuvo una segunda temporada en 2009.
+                        <br /><br />
+                        <b>Cine y televisión</b>
+                        <br />
+                        Clement actuó en varias películas. Su debut fue en la comedia de kung fu Tongan Ninja, dirigida por el neozelandés Jason Stutter. Ha trabajado con Stutter en otras dos películas: la comedia de fantasmas de bajo presupuesto Diagnosis Death y el drama Predicament, basado en la novela del fallecido novelista Ronald Hugh Morrieson. Clement también tiene un rol en la comedia estadounidense Gentlemen Broncos, dirigida por el director de Napoleon Dynamite, Jared Hess. Gracias a este rol recibió una nominación a un Independent Spirit Award al mejor actor de reparto. Aunque recibió críticas negativas, alcanzando una puntuación de 28 sobre 100 en el sitio Metacritic, algunos destacaron la actuación de Clement. En 2011 le puso voz al personaje Nigel (conocido como Pepillo en español) en la película Río y su secuela, y en 2012 fue el principal antagonista en Men in Black 3. Clement también coescribió y codirigió el falso documental sobre vampiros What We Do in the Shadows junto a su colega comediante Taika Waititi. Tuvo su premier en el Festival de Cine de Sundance de 2014 y se estrenó en Estados Unidos en febrero de 2015. En 2015 Clement protagonizó la película People, Places, Things, que también se vio en Sundance.
+
+                    </p>
+                </div>
+            </div>
+</article>
+
+    </section>
+
+    <footer>
+        <div>
+            <img src="images/redes/facebook.png" alt="Facebook">
+            <img src="images/redes/twitter.png" alt="Twitter">
+            <img src="images/redes/youtube.png" alt="Youtube">
+            <img src="images/redes/instagram.png" alt="Instagram">
+        </div>
+        <div class="derechos">
+            <p>&copy; DERECHOS RESERVADOS 2024. MITRE, MARTIN FEDERICO</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("menu_bar");
+            if (x.className === "") {
+                x.className += " responsive";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+</body>
+</html>
