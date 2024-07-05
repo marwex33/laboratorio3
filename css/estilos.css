@@ -5,22 +5,25 @@
 }
 p {
 	font-size: 1.25em;
-	overflow: auto;
-
+	
 }
 h1 {
-	font-size: 2.5em;
+	font-size: 3em;
 	text-align:center;
-	padding-top: 20px;
+	padding: 20px;
 }
-h2 {font-size: 3em}
+h2 {
+	font-size: 2.5em;
+	padding: 15px;
+}
 h3 {
 	font-size: 2.5em;
 	text-align: center;
+	padding: 15px;
 }
 h4 {
 	font-size: 2em;
-	
+	padding: 15px;
 }
 
 body {
@@ -28,7 +31,6 @@ body {
 }
 
 #form {
-	font-family: 'Noto Sans', sans-serif;
 	background-color: #ab4493;
 }
 
@@ -36,12 +38,6 @@ form{
 	width: 90%;
 }
 
-.contact_form {
-	padding-top: 105px;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 35px;
-}
 .formulario {
 	width: 500px;
 	height: auto;
@@ -49,12 +45,10 @@ form{
 	padding-top: 30px;
 	padding-bottom: 20px;
 	background-color: #fbfbfb;
-	
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
-
 
 input {
 	background-color: #fbfbfb;
@@ -68,6 +62,14 @@ input {
 	padding-left: 10px;
 	margin-bottom: 20px;
 }
+
+	input:invalid textarea:invalid {
+		border: 2px dashed red;
+	}
+	
+	input:valid textarea:valid{
+		border: 2px solid black;
+	}
 
 
 textarea {
@@ -87,7 +89,6 @@ textarea {
 
 label {
 	display: block;
-	
 }
 
 
@@ -104,18 +105,13 @@ button {
 	border-radius: 10px;
 	width: 100%;
 	cursor: pointer;
+	transition: all .3s;
+	color: white;
 }
-
-
-	#enviar p {
-		color: #fff;
-	}
-
 
 #form span {
 	color: #ab4493;
 }
-
 
 .aviso {
 	font-size: 13px;
@@ -124,14 +120,12 @@ button {
 
 
 .formulario h1 {
-	
 	text-align: center;
-	padding-bottom: 20px;
 	color: #ab4493;
 }
 
 
-.formulario h3 {
+.formulario h2 {
 	font-size: 16px;
 	padding-bottom: 30px;
 	color: #0e0e0e;
@@ -152,6 +146,12 @@ button {
 .formulario textarea:focus {
 	outline: 0;
 	border: 1px solid #97d848;
+}
+
+#form .container .img-container {
+	background-image: url(../images/contactos_ima.jpg);
+	border-radius: 150px;
+
 }
 
 header {
@@ -236,7 +236,7 @@ header .menu:hover {
 	background-size: cover;
 	background-position: center center;
 	color: white;
-	font-size: 3.5em;
+	
 }
 
 .boton {
@@ -271,11 +271,15 @@ header .menu:hover {
 	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(../images/sydfondo.jpg);
 }
 .container {
-	text-align: center;
 	padding: 100px 12px;
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 5%;
+	align-items:center;
+}
+
+.container3 .container {
+	padding-bottom:0px;
 }
 
 .img-container {
@@ -289,15 +293,13 @@ header .menu:hover {
 }
 
 .texto {
-	width: 50%;
 	max-width: 1000px;
 	min-width: 300px;
-	max-height: 800px;
 	text-align: initial;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+	padding-right: 20px;
 }
 
 #trama {
@@ -344,16 +346,18 @@ header .menu:hover {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 5%;
+	padding-bottom: 200px;
 }
 
 .personajes {
 	margin-top: 3%;
 	display: flex;
+	justify-content:center;
 }
 
 .personajes div a{
 	margin:1rem;
-	width: 30%;
+	width: 20%;
 	border-radius: 5px;
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
@@ -373,8 +377,8 @@ header .menu:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:center;
-	margin-right: 10%;
-	margin-left: 10%;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 
 #impar {
@@ -383,7 +387,24 @@ header .menu:hover {
 }
 
 
+.container3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
 
+.container3 .container2{
+	margin-top:0px;
+}
+
+.texto2 {
+	max-width: 1524px;
+	text-align: initial;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 footer {
 	display: flex;
@@ -406,7 +427,8 @@ footer div{
 	margin-top: 2%;
 }
 
-@media (max-width: 1050px){
+@media (max-width: 480px) {
+
 	header {
 		align-items: center;
 		justify-content: space-around;
@@ -449,12 +471,12 @@ footer div{
 		nav.responsive ul li a {
 			padding-right: 0;
 		}
+
 	.img-container {
 		background-image: none;
 		height: 0px;
 		width: 0px;
 	}
-
 	.texto {
 		width: 100%;
 		padding-left: 0px;
@@ -463,20 +485,14 @@ footer div{
 		justify-content: center;
 	}
 
-	h3{
+	h3 {
 		font-size: 1.5em;
 	}
 
-	.container .container2{
+	.container .container2 {
 		display: none;
 	}
-	
-}
-@media (max-width: 480px) {
 
-	
-	
-	
 	section {
 		max-width: 480px;
 		width: 100%;
@@ -499,12 +515,13 @@ footer div{
 	
 
 		.personajes div {
-			justify-content:center;
 			width: 100%;
+
 		}
 
 			.personajes div a {
-				width: 15vh;			
+				width: 25vh;
+				
 			}
 			h4{
 				font-size: 1rem;
